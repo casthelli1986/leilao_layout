@@ -108,6 +108,74 @@ p {
     z-index: 0;
 }
 
+/* Banner page */
+.banner-page {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.banner-page .banner-page-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(var(--theme-color-primary-rgb), 0.8);
+    backdrop-filter: blur(20px);
+    z-index: 0;
+}
+
+.banner-page .banner-page-content {
+    position: relative;
+    color: #fff;
+    z-index: 10;
+}
+
+.banner-page .banner-page-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.banner-page .banner-page-content ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.banner-page .banner-page-content ul li {
+    margin: 10px 0;
+}
+
+.banner-page .banner-page-sidebar {
+    position: relative;
+}
+
+.banner-page .banner-page-sidebar .banner-page-item-cover {
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+
+/* Pre page */
+.pre-page .card-store {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.pre-page .card-store ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.pre-page .btn-link {
+    text-decoration: none;
+}
+
+/* Page content */
+.page-content {
+    text-align: justify;
+}
+
 /* Info Cards */
 .info-cards {
     position: relative;
@@ -136,7 +204,7 @@ p {
 
 /* Search Block */
 .search-block {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Items List */
@@ -202,7 +270,6 @@ footer a {
 footer a:hover {
     color: var(--theme-color-secondary);
 }
-
 
 footer ul {
     padding-left: 0;

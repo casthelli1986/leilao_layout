@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilão Aeroclube de Juiz de Fora</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="inc/css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="inc/libs/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="inc/libs/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg theme-bg-primary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="inc/img/acjf.png" style="max-height: 50px;" alt="Leilão Aeroclube de Juiz de Fora">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="#">Leilões</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Minha conta
+                            </a>
+                            <ul class="dropdown-menu border-0">
+                                <li><a class="dropdown-item" href="#">
+                                        <small><i class="fa fa-user"></i> Login</small>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <small><i class="fa fa-address-card"></i> Cadastro</small>
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">
+                                        <small><i class="fa-solid fa-right-from-bracket"></i> Sair</small>
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-page" style="background-image: url('inc/img/contrato.jpg');">
+            <div class="container pb-5">
+                <div class="row py-5">
+                    <div class="col-12 col-md-8">
+                        <div class="banner-page-content">
+                            <h2>Repasse 5622.11.2023</h2>
+                            <ul>
+                                <li><i class="fa-solid fa-file-lines"></i> <b>Contrato:</b> Repasse 5622.11.2023</li>
+                                <li><i class="fa-solid fa-clock"></i> Termina em <span class="text-success"><b>7
+                                            dias</b> e <b>8 horas</b></span></li>
+                                <li><i class="fa-solid fa-calendar"></i> <b>Conclusão:</b> <span
+                                        class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="banner-page-sidebar">
+                            <div class="banner-page-item-cover p-1 bg-light rounded text-center">
+                                <img src="inc/img/contrato.jpg" alt="" class="img-fluid rounded mb-2">
+                                <div class="input-group mb-1">
+                                    <select class="form-select" id="lance">
+                                        <option value="" selected>1.400,00</option>
+                                        <option value="">1.500,00</option>
+                                        <option value="">1.600,00</option>
+                                        <option value="">1.700,00</option>
+                                        <option value="">1.800,00</option>
+                                        <option value="">1.900,00</option>
+                                        <option value="">2.000,00</option>
+                                        <option value="">2.100,00</option>
+                                        <option value="">2.200,00</option>
+                                        <option value="">2.300,00</option>
+                                    </select>
+                                </div>
+                                <a href="#" class="btn btn-success w-100"><i class="fa-solid fa-gavel"></i> Dar meu
+                                    lance</a>
+                                <p class="text-danger mt-2">
+                                    <small><i class="fa-solid fa-triangle-exclamation"></i>Você precisa estar logado
+                                        para
+                                        dar lances!</small>
+                                </p>
+                                <p>Com o valor de lance <b>R$1.500,00</b>, o valor da hora é de <b>R$150,00.</b></p>
+                                <hr>
+                                <p class="text-muted"><small><b>Obs:</b> Valores acima do valor mínimo de lance entrarão
+                                        como valor de
+                                        reserva para lances automáticos.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-page-overlay"></div>
+        </section>
+        <section class="pre-page bg-light">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-12 col-md-8">
+                        <div class="page-cards d-flex justify-content-between mb-4">
+                            <div class="followers">
+                                <a href="#" class="badge theme-bg-primary me-2">Seguir</a><small class="text-muted"><i
+                                        class="fa-solid fa-eye"></i> 8 seguidores</small>
+                            </div>
+                            <div class="payment">
+
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h3><i class="fa-solid fa-gavel"></i> Lance atual</h3>
+                                <p class="display-6 text-muted mb-0">Sem lances</p>
+                                <button type="button" class="btn btn-link p-0" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Ver lances (0)</button>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Ao realizar este lance você tem uma economia de
+                                    <b class="text-success">R$3.500,00 (70% OFF )</b> sobre o preço atual do
+                                    pacote.
+                                </p>
+                                <p><b>Preço atual: <s class="text-danger">R$5000,00</s></b></p>
+                            </div>
+                        </div>
+                        <div class="card-store card border-0">
+                            <div class="card-body">
+                                <h5><b>L ACJF Store</b></h5>
+                                <p>Você também pode adquirir o pacote, comprando direto da loja.</p>
+                                <h6><b>Métodos de pagamento</b></h6>
+                                <ul>
+                                    <li><i class="fa-brands fa-pix"></i> Pix</li>
+                                    <li><i class="fa-solid fa-credit-card"></i> Cartão</li>
+                                </ul>
+                                <div class="display-6 mb-3">R$3.000,00</div>
+                                <a href="#" class="btn theme-btn-primary px-4"><i class="fa-solid fa-cart-shopping"></i>
+                                    Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-content">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-12">
+                        <h3>Descrição do leilão</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper mauris sit amet
+                            leo pellentesque, sit amet porttitor metus pretium. Nam tincidunt nunc velit, sed aliquam
+                            sapien maximus ut. Mauris tempus quam at nisi suscipit, vel tristique lacus commodo. Donec
+                            vitae nisi et neque ultricies imperdiet. Mauris eu elementum diam, sed eleifend orci. Cras
+                            eget vulputate augue, vitae faucibus arcu. Morbi in hendrerit tellus. Sed vel consequat
+                            augue.</p>
+                        <p>Praesent aliquet massa varius felis posuere, a eleifend neque tempor. Phasellus ultricies
+                            vehicula auctor. Suspendisse egestas interdum ex at sollicitudin. Curabitur vel enim
+                            lacinia, malesuada dui vitae, finibus dui. Morbi rutrum mauris arcu, vel efficitur ipsum
+                            gravida at. Integer tincidunt, nisl quis lobortis efficitur, tellus elit pharetra purus, ac
+                            ultricies ex turpis quis tortor. Duis at ex lectus. Praesent ac placerat tellus.</p>
+                        <p>Sed suscipit ut enim ac auctor. Sed id nisi luctus, luctus leo id, porttitor eros. Nulla et
+                            accumsan velit. Suspendisse sem dui, interdum id auctor eget, eleifend eget sapien. Donec
+                            sit amet risus lorem. Fusce nec ante tincidunt, iaculis felis in, semper leo. Nulla sit amet
+                            laoreet orci. Vivamus massa arcu, mattis consectetur ligula at, placerat pellentesque nibh.
+                            Suspendisse sem justo, interdum non nisi sit amet, tempor maximus quam. Sed efficitur massa
+                            et commodo suscipit. Nullam fermentum est non auctor tincidunt. Quisque congue accumsan
+                            velit, et tempor libero suscipit ac. Suspendisse venenatis magna nec diam pellentesque
+                            pretium. Maecenas quam risus, congue id consequat quis, lobortis sit amet eros. Nullam
+                            cursus tempus dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                            per inceptos himenaeos.</p>
+                        <p>Praesent semper odio a dolor vulputate, quis eleifend libero semper. Pellentesque viverra
+                            tempus massa, eget vulputate turpis tristique sit amet. Vestibulum commodo et justo nec
+                            tincidunt. Fusce feugiat tristique mi vel blandit. Praesent at nibh nibh. Fusce laoreet
+                            pellentesque purus, nec scelerisque ante venenatis nec. Nulla eu augue id nulla consectetur
+                            tempus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="exampleModalLabel">Lances</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Data/Hora</th>
+                                <th scope="col">Usuário</th>
+                                <th scope="col">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><small>28/12/2023 - 15:22</small></th>
+                                <td>Mark</td>
+                                <td class="text-success">R$150,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><small>28/12/2023 - 13:52</small></th>
+                                <td>Jacob</td>
+                                <td class="text-success">R$130,00</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <th scope="row"><small>27/12/2023 - 12:17</small></th>
+                                <td>Thornton</td>
+                                <td class="text-success">R$120,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="theme-bg-primary py-5 text-light">
+        <section class="container mb-5">
+            <div class="row">
+                <div class="col-12 col-md-3 text-center">
+                    <img src="inc/img/acjf.png" alt="" class="mb-3">
+                    <h4>Aeroclube de Juiz de Fora</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ornare risus. Phasellus
+                        sed dolor mi. Donec laoreet convallis diam sed luctus.</p>
+                </div>
+                <div class="col-12 col-md-3 px-5">
+                    <h6>Atendimento ao cliente</h6>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Política de privacidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Termos e condições
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Suporte
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 px-5">
+                    <h6>Contato</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Av. Prefeito Mello Reis, 311</li>
+                        <li><i class="fa-solid fa-phone"></i> 32 3233-1004</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> 32 99113-6578</li>
+                        <li><i class="fa-solid fa-envelope"></i> contato@aeroclubejf.com.br</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 px-5">
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="copyright text-center">
+                <small><b>Aeroclube de Juiz de Fora</b> | Copyright © 2023 - Todos os direitos reservados.</small>
+                <small>Desenvolvido por <a href="https://maisaqui.com.br/"><b>Mais Aqui</b></a></small>
+            </div>
+        </section>
+    </footer>
+    <script src="inc/libs/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
