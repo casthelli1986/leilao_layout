@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,316 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="inc/libs/fontawesome-free-6.2.1-web/css/all.min.css">
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg theme-bg-primary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="inc/img/acjf.png" style="max-height: 50px;" alt="Leilão Aeroclube de Juiz de Fora">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="#">Leilões</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Minha conta
+                            </a>
+                            <ul class="dropdown-menu border-0">
+                                <li><a class="dropdown-item" href="#">
+                                        <small><i class="fa fa-user"></i> Login</small>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <small><i class="fa fa-address-card"></i> Cadastro</small>
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">
+                                        <small><i class="fa-solid fa-right-from-bracket"></i> Sair</small>
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Main-banner -->
+        <section class="main-banner" style="background-image: url('inc/img/leilao-aeroclube-de-juiz-de-fora.jpg');">
+            <div class="main-banner-content container">
+                <div class="row pt-5">
+                    <div class="col-12 col-md-4 py-5">
+                        <h2>Bem vindo!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ornare risus.
+                            Phasellus sed dolor mi. Donec laoreet convallis diam sed luctus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner-overlay"></div>
+        </section>
+
+        <!-- Info cards -->
+        <section class="info-cards mb-5">
+            <div class="container">
+                <div class="info-cards-content theme-bg-primary rounded">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="info-card">
+                                <i class="fa-solid fa-lock"></i>
+                                <h4>Segurança</h4>
+                                <p>Seus dados são protegidos por um dos mais avançados sistemas de segurança da
+                                    informação. Navegue e adquira produtos em nosso site sem preocupações!</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 middle-card">
+                            <div class="info-card">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                                <h4>Economia</h4>
+                                <p>Além da procedência dos ativos à venda, os valores são abaixo do mercado. Um veículo
+                                    seminovo, por exemplo, pode ter economia de até 40% abaixo da Tabela Fipe.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="info-card">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                                <h4>Transparência</h4>
+                                <p>O processo de disputa pelos produtos não tem interferência humana, ou seja, todos os
+                                    participantes têm igualdade de condições no lance ou na proposta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="search-block rounded mb-5 p-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar leilões"
+                                    aria-label="Buscar leilões" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <h2 class="title-page text-center mb-5">Leilões ativos</h2>
+                    </div>
+                </div>
+                <div class="items-list">
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-success"><b>7 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <span class="badge bg-danger">Últimos dias</span>
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-danger"><b>2 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-danger"><b>30/12/2023</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-success"><b>7 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-success"><b>7 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-success"><b>7 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-success"><b>7 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-success"><b>7 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+
+                    <!-- Item card -->
+                    <div class="product-item card border-0 shadow-sm">
+                        <div class="product-item-img">
+                            <div class="product-item-img-overlay"></div>
+                            <img src="inc/img/contrato.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="product-item-title rounded shadow p-2">
+                                <h5>Repasse 5622.11.2023</h5>
+                            </div>
+                            <p>Termina em <span class="text-success"><b>7 dias</b> e <b>8 horas</b></span></p>
+                            <p>Conclusão: <span class="text-success"><b>04/01/2024</b> às <b>18:40</b></span></p>
+                            <a href="#" class="btn theme-btn-primary btn-sm w-100">Ver leilão</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="theme-bg-primary py-5 text-light">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 text-center">
+                    <img src="inc/img/acjf.png" alt="" class="mb-3">
+                    <h4>Aeroclube de Juiz de Fora</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ornare risus. Phasellus
+                        sed dolor mi. Donec laoreet convallis diam sed luctus.</p>
+                </div>
+                <div class="col-12 col-md-3 px-5">
+                    <h6>Atendimento ao cliente</h6>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Política de privacidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Termos e condições
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Suporte
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 px-5">
+                    <h6>Contato</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Av. Prefeito Mello Reis, 311</li>
+                        <li><i class="fa-solid fa-phone"></i> 32 3233-1004</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> 32 99113-6578</li>
+                        <li><i class="fa-solid fa-envelope"></i> contato@aeroclubejf.com.br</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3 px-5">
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src="inc/libs/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
