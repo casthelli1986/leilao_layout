@@ -319,12 +319,13 @@ footer ul {
 
 footer ul li {
     margin: 8px 0;
+    font-size: 14px;
 }
 
 footer ul li i {
     font-size: 80%;
     color: var(--theme-color-secondary);
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 footer ul.social-list {
