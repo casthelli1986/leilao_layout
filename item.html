@@ -71,7 +71,7 @@
         <section class="banner-page" style="background-image: url('inc/img/contrato.jpg');">
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-5 order-1 order-md-0">
                         <div class="banner-page-sidebar">
                             <div class="banner-page-item-cover p-1 bg-light rounded text-center">
                                 <img src="inc/img/contrato.jpg" alt="" class="img-fluid rounded mb-3">
@@ -82,12 +82,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-7">
-                        <div class="banner-page-content">
+                    <div class="col-12 col-md-7 order-0 order-md-1">
+                        <div class="banner-page-content text-center text-md-start mb-5 mb-md-0">
                             <h2>Título do leilão</h2>
                             <ul>
                                 <li><i class="fa-solid fa-file-lines"></i> <b>Ficha:</b> Repasse 5622.11.2023</li>
-                                <li><i class="fa-solid fa-clock"></i> Termina em <span class="text-success"><b>7h, 8h,
+                                <li><i class="fa-solid fa-clock"></i> Termina em <span class="text-success"><b>7d, 8h,
                                             54s</b></span></li>
                                 <li><i class="fa-solid fa-calendar"></i> <b>04/01/2024</b> às <b>18:40</b></li>
                             </ul>
@@ -106,7 +106,7 @@
                 <div class="row py-5">
                     <div class="col-12 col-md-5"></div>
                     <div class="col-12 col-md-7">
-                        <div class="page-description">
+                        <div class="page-description text-center text-md-start px-3 px-md-0">
                             <p>Com o valor de lance <b>R$1.500,00</b>, o valor da hora é de <b>R$150,00.</b></p>
                             <div class="input-group" style="max-width: 350px;">
                                 <select class="form-select" id="lance">
@@ -138,13 +138,16 @@
                                 pacote.
                             </p>
                             <div class="cart-area">
-                                <p>Ou <button class="btn btn-sm theme-btn-primary px-3"><i class="fa-solid fa-shopping-cart"></i> Compre já</button> por <b>R$5000,00</b></p> 
+                                <p>Ou <button class="btn btn-sm theme-btn-primary px-3"><i
+                                            class="fa-solid fa-shopping-cart"></i> Compre já</button> por
+                                    <b>R$5000,00</b>
+                                </p>
                             </div>
                         </div>
                         <div class="card-store card border-0">
-                            <div class="card-body">
+                            <div class="card-body text-center text-md-start">
                                 <h6><b>Métodos de pagamento</b></h6>
-                                <ul class="d-flex">
+                                <ul class="d-flex justify-content-center justify-content-md-start">
                                     <li class="me-4"><i class="fa-brands fa-pix"></i> Pix</li>
                                     <li class="me-4"><i class="fa-solid fa-credit-card"></i> Cartão</li>
                                 </ul>
@@ -158,7 +161,7 @@
             <div class="container">
                 <div class="row py-5">
                     <div class="col-12">
-                        <h3>Descrição do leilão</h3>
+                        <h3 class="text-center text-md-start">Descrição do leilão</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper mauris sit amet
                             leo pellentesque, sit amet porttitor metus pretium. Nam tincidunt nunc velit, sed aliquam
                             sapien maximus ut. Mauris tempus quam at nisi suscipit, vel tristique lacus commodo. Donec
@@ -186,6 +189,18 @@
                             pellentesque purus, nec scelerisque ante venenatis nec. Nulla eu augue id nulla consectetur
                             tempus.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-msg">
+            <div class="container">
+                <div class="alert alert-primary alert-dismissible fade show text-center" role="alert">
+                    <h4 class="display-6">Economia</h4>
+                    <p>Ao realizar este lance você tem uma economia de
+                        <b class="text-success">R$3.500,00 (70% OFF)</b> sobre o preço atual do
+                        pacote.
+                    </p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             </div>
         </section>
@@ -238,13 +253,13 @@
     <footer class="theme-bg-primary py-5 text-light">
         <section class="container mb-5">
             <div class="row">
-                <div class="col-12 col-md-3 text-center">
+                <div class="col-12 col-lg-3 text-center mb-4 order-1">
                     <img src="inc/img/acjf.png" alt="" class="mb-3">
                     <h4>Aeroclube de Juiz de Fora</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ornare risus. Phasellus
                         sed dolor mi. Donec laoreet convallis diam sed luctus.</p>
                 </div>
-                <div class="col-12 col-md-3 px-5">
+                <div class="col-12 col-lg-3 text-center text-lg-start px-4 mb-4 order-2">
                     <h6>Atendimento ao cliente</h6>
                     <ul>
                         <li>
@@ -264,7 +279,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-3 px-5">
+                <div class="col-12 col-lg-3 text-center text-lg-start px-4 mb-4 order-3">
                     <h6>Contato</h6>
                     <ul>
                         <li><i class="fa-solid fa-location-dot"></i> Av. Prefeito Mello Reis, 311</li>
@@ -273,7 +288,7 @@
                         <li><i class="fa-solid fa-envelope"></i> contato@aeroclubejf.com.br</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-3 px-5">
+                <div class="col-12 col-lg-3 text-center px-4 mb-4 order-0 order-lg-4 d-flex justify-content-center">
                     <ul class="social-list">
                         <li>
                             <a href="#">

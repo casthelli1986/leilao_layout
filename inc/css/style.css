@@ -297,6 +297,15 @@ p {
     z-index: 0;
 }
 
+/* Bootom message */
+.bottom-msg {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
 /* Footer */
 footer h4,
 footer h6 {
@@ -352,6 +361,34 @@ footer ul.social-list li a:hover i {
     color: #fff;
 }
 
+/* Mobile: MD */
+@media (min-width: 768px) and (max-width: 991px) {
+    .items-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
 /* Mobile: SM */
 @media screen and (max-width: 767px) {
+    .items-list {
+        display: block;
+    }
+
+    .items-list .product-item {
+        margin-bottom: 20px;
+    }
+
+    .banner-page .banner-page-sidebar .banner-page-item-cover {
+        position: relative;
+        margin-bottom: -60px;
+    }
+
+    .banner-page .banner-page-sidebar .banner-page-item-cover img {
+        width: 100%;
+        height: 285px;
+        object-fit: cover;
+    }
 }
