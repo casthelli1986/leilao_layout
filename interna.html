@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilão Aeroclube de Juiz de Fora</title>
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="inc/css/style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="inc/libs/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="inc/libs/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg theme-bg-primary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="inc/img/acjf.png" style="max-height: 50px;" alt="Leilão Aeroclube de Juiz de Fora">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="#">Leilões</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link active" href="/tutorial.html">Entenda como funciona</a>
+                        </li>
+                        <li class="nav-item ms-3">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Minha conta
+                            </a>
+                            <ul class="dropdown-menu border-0">
+                                <li><a class="dropdown-item" href="#">
+                                        <small><i class="fa fa-user"></i> Login</small>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <small><i class="fa fa-address-card"></i> Cadastro</small>
+                                    </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">
+                                        <small><i class="fa-solid fa-right-from-bracket"></i> Sair</small>
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-page" style="background-image: url('inc/img/contrato.jpg');">
+            <div class="container py-5">
+                <div class="banner-page-content">
+                    <h2>Título da página</h2>
+                    <p>Descrição da página (se necessário)</p>
+                </div>
+            </div>
+            <div class="banner-page-overlay"></div>
+        </section>
+        <section class="page-content">
+            <div class="container py-5">
+                Conteúdo da página aqui
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="exampleModalLabel">Lances</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Data/Hora</th>
+                                <th scope="col">Usuário</th>
+                                <th scope="col">Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><small>28/12/2023 - 15:22</small></th>
+                                <td>Mark</td>
+                                <td class="text-success">R$150,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><small>28/12/2023 - 13:52</small></th>
+                                <td>Jacob</td>
+                                <td class="text-success">R$130,00</td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <th scope="row"><small>27/12/2023 - 12:17</small></th>
+                                <td>Thornton</td>
+                                <td class="text-success">R$120,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="theme-bg-primary py-5 text-light">
+        <section class="container mb-5">
+            <div class="row">
+                <div class="col-12 col-lg-3 text-center mb-4 order-1">
+                    <img src="inc/img/acjf.png" alt="" class="mb-3">
+                    <h4>Aeroclube de Juiz de Fora</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu ornare risus. Phasellus
+                        sed dolor mi. Donec laoreet convallis diam sed luctus.</p>
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-start px-4 mb-4 order-2">
+                    <h6>Atendimento ao cliente</h6>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Política de privacidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Termos e condições
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-angle-right"></i> Suporte
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 text-center text-lg-start px-4 mb-4 order-3">
+                    <h6>Contato</h6>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Av. Prefeito Mello Reis, 311</li>
+                        <li><i class="fa-solid fa-phone"></i> 32 3233-1004</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> 32 99113-6578</li>
+                        <li><i class="fa-solid fa-envelope"></i> contato@aeroclubejf.com.br</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 text-center px-4 mb-4 order-0 order-lg-4 d-flex justify-content-center">
+                    <ul class="social-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="copyright text-center">
+                <small><b>Aeroclube de Juiz de Fora</b> | Copyright © 2023 - Todos os direitos reservados.</small>
+                <small>Desenvolvido por <a href="https://maisaqui.com.br/"><b>Mais Aqui</b></a></small>
+            </div>
+        </section>
+    </footer>
+    <script src="inc/libs/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="inc/libs/VenoBox-master/dist/venobox.min.js"></script>
+    <script>
+        new VenoBox({
+            selector: '.venobox',
+            numeration: true,
+            infinigall: true,
+            share: true,
+            spinner: 'rotating-plane'
+        });
+    </script>
+</body>
+
+</html>
